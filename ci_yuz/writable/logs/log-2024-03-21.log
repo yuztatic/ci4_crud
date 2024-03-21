@@ -1,0 +1,238 @@
+INFO - 2024-03-21 15:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-21 15:41:32 --> ErrorException: Undefined variable $students
+in APPPATH\Views\students\list.php on line 41.
+ 1 APPPATH\Views\students\list.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\app\\Views\\students\\list.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\app\\Views\\students\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('students/list', [], true)
+ 5 APPPATH\Controllers\StudentsController.php(13): view('students/list')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+INFO - 2024-03-21 15:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-21 15:42:57 --> ErrorException: Undefined variable $students
+in APPPATH\Views\students\list.php on line 41.
+ 1 APPPATH\Views\students\list.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\app\\Views\\students\\list.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\app\\Views\\students\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('students/list', [], true)
+ 5 APPPATH\Controllers\StudentsController.php(13): view('students/list')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+INFO - 2024-03-21 15:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-21 15:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-21 15:59:10 --> ErrorException: Undefined variable $ImageName
+in APPPATH\Controllers\StudentsController.php on line 44.
+ 1 APPPATH\Controllers\StudentsController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ImageName', 'C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\app\\Controllers\\StudentsController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+ERROR - 2024-03-21 16:05:07 --> mysqli_sql_exception: Column 'student_id' cannot be null in C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci_yuz\ci_yuz\app\Controllers\StudentsController.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+#9 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+#10 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_yuz\ci_yuz\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-21 16:05:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'student_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (:student_name:, :student_id:, :student_section:, :student_course:, :student_batch:, :student_grade_level:, :student_profile:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\StudentsController.php(48): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+CRITICAL - 2024-03-21 16:05:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'student_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 1\', \'BSCS\', \'2013\', \'4\', \'1711037107_dd08278d8571a5f3ca52.png\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 1\', \'BSCS\', \'2013\', \'4\', \'1711037107_dd08278d8571a5f3ca52.png\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (:student_name:, :student_id:, :student_section:, :student_course:, :student_batch:, :student_grade_level:, :student_profile:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\StudentsController.php(48): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+CRITICAL - 2024-03-21 16:05:07 --> [Caused by] mysqli_sql_exception: Column 'student_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 1\', \'BSCS\', \'2013\', \'4\', \'1711037107_dd08278d8571a5f3ca52.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 1\', \'BSCS\', \'2013\', \'4\', \'1711037107_dd08278d8571a5f3ca52.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 1\', \'BSCS\', \'2013\', \'4\', \'1711037107_dd08278d8571a5f3ca52.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (:student_name:, :student_id:, :student_section:, :student_course:, :student_batch:, :student_grade_level:, :student_profile:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\StudentsController.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+ERROR - 2024-03-21 16:07:01 --> mysqli_sql_exception: Column 'student_id' cannot be null in C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci_yuz\ci_yuz\app\Controllers\StudentsController.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+#9 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+#10 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_yuz\ci_yuz\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-21 16:07:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'student_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (:student_name:, :student_id:, :student_section:, :student_course:, :student_batch:, :student_grade_level:, :student_profile:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\StudentsController.php(48): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+CRITICAL - 2024-03-21 16:07:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'student_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 1\', \'BSCS\', \'2013\', \'4\', \'1711037221_e961f64d5aaf9826b4dd.png\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 1\', \'BSCS\', \'2013\', \'4\', \'1711037221_e961f64d5aaf9826b4dd.png\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (:student_name:, :student_id:, :student_section:, :student_course:, :student_batch:, :student_grade_level:, :student_profile:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\StudentsController.php(48): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+CRITICAL - 2024-03-21 16:07:01 --> [Caused by] mysqli_sql_exception: Column 'student_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 1\', \'BSCS\', \'2013\', \'4\', \'1711037221_e961f64d5aaf9826b4dd.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 1\', \'BSCS\', \'2013\', \'4\', \'1711037221_e961f64d5aaf9826b4dd.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 1\', \'BSCS\', \'2013\', \'4\', \'1711037221_e961f64d5aaf9826b4dd.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (:student_name:, :student_id:, :student_section:, :student_course:, :student_batch:, :student_grade_level:, :student_profile:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\StudentsController.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+ERROR - 2024-03-21 16:07:40 --> mysqli_sql_exception: Column 'student_id' cannot be null in C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci_yuz\ci_yuz\app\Controllers\StudentsController.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+#9 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+#10 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci_yuz\ci_yuz\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci_yuz\ci_yuz\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-21 16:07:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'student_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (:student_name:, :student_id:, :student_section:, :student_course:, :student_batch:, :student_grade_level:, :student_profile:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\StudentsController.php(48): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+CRITICAL - 2024-03-21 16:07:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'student_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 2\', \'BSCS\', \'2013\', \'4\', \'1711037260_ab6bf2f88f0f225fa5f4.png\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 2\', \'BSCS\', \'2013\', \'4\', \'1711037260_ab6bf2f88f0f225fa5f4.png\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (:student_name:, :student_id:, :student_section:, :student_course:, :student_batch:, :student_grade_level:, :student_profile:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\StudentsController.php(48): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+CRITICAL - 2024-03-21 16:07:40 --> [Caused by] mysqli_sql_exception: Column 'student_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 2\', \'BSCS\', \'2013\', \'4\', \'1711037260_ab6bf2f88f0f225fa5f4.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 2\', \'BSCS\', \'2013\', \'4\', \'1711037260_ab6bf2f88f0f225fa5f4.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (\'yuz\', NULL, \'Section 2\', \'BSCS\', \'2013\', \'4\', \'1711037260_ab6bf2f88f0f225fa5f4.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_students` (`student_name`, `student_id`, `student_section`, `student_course`, `student_batch`, `student_grade_level`, `student_profile`) VALUES (:student_name:, :student_id:, :student_section:, :student_course:, :student_batch:, :student_grade_level:, :student_profile:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\StudentsController.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->storeStudent()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+INFO - 2024-03-21 16:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-21 16:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-21 16:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-21 16:09:58 --> ErrorException: Undefined variable $students
+in APPPATH\Views\students\list.php on line 46.
+ 1 APPPATH\Views\students\list.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\app\\Views\\students\\list.php', 46)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\app\\Views\\students\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('students/list', [], true)
+ 5 APPPATH\Controllers\StudentsController.php(13): view('students/list')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+INFO - 2024-03-21 16:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-21 16:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-21 16:10:07 --> ErrorException: Undefined variable $students
+in APPPATH\Views\students\list.php on line 46.
+ 1 APPPATH\Views\students\list.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $students', 'C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\app\\Views\\students\\list.php', 46)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\app\\Views\\students\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('students/list', [], true)
+ 5 APPPATH\Controllers\StudentsController.php(13): view('students/list')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\StudentsController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci_yuz\\ci_yuz\\public\\index.php')
+INFO - 2024-03-21 16:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-21 16:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
